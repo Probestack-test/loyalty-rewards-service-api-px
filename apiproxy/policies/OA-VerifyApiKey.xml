@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Verify API Key
+  Looks up the API key from the request.
+  On success, sets variables:
+    verifyapikey.OA-VerifyApiKey.client_id
+    verifyapikey.OA-VerifyApiKey.app.name
+    verifyapikey.OA-VerifyApiKey.developer.email
+-->
+<VerifyAPIKey async="false" continueOnError="false" enabled="true"
+              name="OA-VerifyApiKey">
+  <DisplayName>Verify API Key</DisplayName>
+  <APIKey ref="request.header.x-api-key"/>
+</VerifyAPIKey>

@@ -1,0 +1,128 @@
+{
+  "microserviceId" : "6a91629ecc3ece0addc83025",
+  "mocks" : [ {
+    "id" : "34588cd5-eafb-4d2e-b1b5-33fb7c0548ca",
+    "microserviceId" : "6a91629ecc3ece0addc83025",
+    "specMetadataId" : "6a9163667d48fb7066a35862",
+    "apiSpecName" : "Loyalty Rewards Service API",
+    "name" : "mock-loyalty-rewards-service-api",
+    "mockServiceName" : "mock-loyalty-rewards-service-api",
+    "mockServerUrl" : "https://forgesphere.probestack.io/mock-api/v1/api/mocks/mock-f794d9c9",
+    "responseLatencyMs" : 0,
+    "mockUrl" : "mock-f794d9c9",
+    "isPrivate" : true,
+    "delayMs" : 0,
+    "requestCount" : 6,
+    "createdAt" : "2026-08-28T10:31:30.519Z",
+    "updatedAt" : "2026-08-28T10:31:38.945Z",
+    "endpoints" : [ {
+      "id" : "cd4e0fbf-f06b-4a64-9af1-5723ccc14902",
+      "mockId" : "34588cd5-eafb-4d2e-b1b5-33fb7c0548ca",
+      "path" : "/accounts/{memberId}",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"memberId\":\"00000000-0000-0000-0000-000000000000\",\"pointBalance\":12450,\"lifetimePoints\":48200,\"tier\":\"GOLD\",\"pointsToNextTier\":2550,\"autoRedeem\":false,\"emailUpdates\":true,\"enrolledAt\":\"2024-01-01T00:00:00Z\",\"updatedAt\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-28T10:31:30.568Z",
+      "updatedAt" : "2026-08-28T10:31:30.569Z"
+    }, {
+      "id" : "382df1eb-27c2-459f-a1f8-fcafba091ead",
+      "mockId" : "34588cd5-eafb-4d2e-b1b5-33fb7c0548ca",
+      "path" : "/accounts/{memberId}",
+      "method" : "PUT",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"memberId\":\"00000000-0000-0000-0000-000000000000\",\"pointBalance\":12450,\"lifetimePoints\":48200,\"tier\":\"GOLD\",\"pointsToNextTier\":2550,\"autoRedeem\":false,\"emailUpdates\":true,\"enrolledAt\":\"2024-01-01T00:00:00Z\",\"updatedAt\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : "{\"autoRedeem\":true,\"emailUpdates\":false}",
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-28T10:31:30.604Z",
+      "updatedAt" : "2026-08-28T10:31:30.604Z"
+    }, {
+      "id" : "d1375e4b-ff15-43bc-8a02-3805f74eecce",
+      "mockId" : "34588cd5-eafb-4d2e-b1b5-33fb7c0548ca",
+      "path" : "/accounts/{memberId}/transactions",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "[{\"id\":\"00000000-0000-0000-0000-000000000000\",\"memberId\":\"00000000-0000-0000-0000-000000000000\",\"type\":\"EARN\",\"points\":350,\"source\":\"ORDER:ORD-2026-0001\",\"balanceAfter\":12450,\"occurredAt\":\"2024-01-01T00:00:00Z\"}]",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-28T10:31:30.613Z",
+      "updatedAt" : "2026-08-28T10:31:30.613Z"
+    }, {
+      "id" : "2cc3d397-9170-4468-9a69-f7cfb85397fb",
+      "mockId" : "34588cd5-eafb-4d2e-b1b5-33fb7c0548ca",
+      "path" : "/accounts/{memberId}/transactions",
+      "method" : "POST",
+      "responseStatus" : 201,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"id\":\"00000000-0000-0000-0000-000000000000\",\"memberId\":\"00000000-0000-0000-0000-000000000000\",\"type\":\"EARN\",\"points\":350,\"source\":\"ORDER:ORD-2026-0001\",\"balanceAfter\":12450,\"occurredAt\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : "{\"type\":\"EARN\",\"points\":350,\"source\":\"ORDER:ORD-2026-0001\",\"note\":\"Points for August order\"}",
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-28T10:31:30.622Z",
+      "updatedAt" : "2026-08-28T10:31:30.622Z"
+    }, {
+      "id" : "2b9cacf3-2162-41f2-8dbd-497f1326547f",
+      "mockId" : "34588cd5-eafb-4d2e-b1b5-33fb7c0548ca",
+      "path" : "/rewards",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "[{\"id\":\"00000000-0000-0000-0000-000000000000\",\"name\":\"10 USD store credit\",\"description\":\"Applies as a discount on your next order\",\"pointCost\":1000,\"category\":\"CREDIT\",\"available\":true}]",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-28T10:31:30.631Z",
+      "updatedAt" : "2026-08-28T10:31:30.631Z"
+    }, {
+      "id" : "24231c99-d545-4492-9fc5-5f09c27f03e6",
+      "mockId" : "34588cd5-eafb-4d2e-b1b5-33fb7c0548ca",
+      "path" : "/rewards/{rewardId}/redeem",
+      "method" : "POST",
+      "responseStatus" : 201,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"id\":\"00000000-0000-0000-0000-000000000000\",\"rewardId\":\"00000000-0000-0000-0000-000000000000\",\"memberId\":\"00000000-0000-0000-0000-000000000000\",\"pointsBurned\":1000,\"redemptionCode\":\"RWD-8H3K-92QP\",\"status\":\"ISSUED\",\"expiresAt\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : "{\"memberId\":\"00000000-0000-0000-0000-000000000000\",\"deliveryEmail\":\"john.doe@example.com\"}",
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-28T10:31:30.639Z",
+      "updatedAt" : "2026-08-28T10:31:30.640Z"
+    } ]
+  } ]
+}
