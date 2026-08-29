@@ -24,4 +24,4 @@ jobs:
       NEXUS_URL: 'http://35.226.113.107:8081'
       NEXUS_REPOSITORY: 'raw-releases'
       NEXUS_USERNAME: 'nexus' 
-      NEXUS_PASSWORD: 'nexus'     
+      NEXUS_PASSWORD: 'nexus'    
