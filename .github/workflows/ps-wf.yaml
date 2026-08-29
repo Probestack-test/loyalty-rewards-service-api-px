@@ -22,6 +22,6 @@ jobs:
       APP_ID: ${{ secrets.APP_ID }}
       APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
       NEXUS_URL: 'http://35.226.113.107:8081'
-      NEXUS_REPOSITORY: 'maven-releases'
+      NEXUS_REPOSITORY: 'raw-releases'
       NEXUS_USERNAME: 'nexus' 
       NEXUS_PASSWORD: 'nexus'      
