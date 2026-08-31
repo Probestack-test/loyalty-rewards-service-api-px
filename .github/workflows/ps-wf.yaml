@@ -3,26 +3,28 @@ name: Apigee Platform CI
 on:
   push:
     branches:
-      - feature-dev
+      - test-1
+
+  workflow_dispatch:
 
 jobs:
+
   deploy:
-    uses: ForgeCrux/pipeline-template/.github/workflows/apigee-v1.yaml@main
+    uses: ForgeCrux/pipeline-template/.github/workflows/apigee-reusable.yml@main
+
     permissions:
       contents: read
       id-token: write
+
     with:
       apigee_org: gen-ai-poc-onboarding
       apigee_env: dev
       deploy_proxy: loyalty-rewards-service-api
       resourcetype: apis
       branch_name: ${{ github.ref_name }}
+      cicd_config_id: 6a5c4e4f19924f68338400de
+
     secrets:
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       APP_ID: ${{ secrets.APP_ID }}
       APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
-      NEXUS_URL: 'http://35.226.113.107:8081'
-      NEXUS_REPOSITORY: 'raw-releases'
-      NEXUS_USERNAME: 'nexus' 
-      NEXUS_PASSWORD: 'nexus'    
